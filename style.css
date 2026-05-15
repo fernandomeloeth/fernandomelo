@@ -104,17 +104,6 @@ body {
   font-size: 13px;
 }
 
-.availability {
-  margin-top: 28px;
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
-  padding: 18px;
-  display: flex;
-  gap: 12px;
-  text-align: left;
-  width: 100%;
-}
 
 .availability i {
   color: #3152ff;
@@ -143,40 +132,6 @@ footer {
   line-height: 1.7;
 }
 
-/* ─── MAIN ─── */
-
-.main-content {
-  flex: 1;
-  padding: 40px 50px;
-  min-width: 0;
-}
-
-/* ─── NAVBAR ─── */
-
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-bottom: 60px;
-}
-
-.social-buttons {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.social-buttons > i {
-  font-size: 22px;
-  cursor: pointer;
-  color: #111827;
-  transition: color 0.2s;
-}
-
-.social-buttons > i:hover {
-  color: #3152ff;
-}
-
 .social-buttons button {
   background: #3152ff;
   color: white;
@@ -192,9 +147,14 @@ footer {
   transition: background 0.2s;
 }
 
-.social-buttons button:hover {
-  background: #2040e0;
+/* ─── MAIN ─── */
+
+.main-content {
+  flex: 1;
+  padding: 40px 50px;
+  min-width: 0;
 }
+
 
 /* ─── HERO ─── */
 
@@ -239,10 +199,10 @@ footer {
   50%       { opacity: 0; }
 }
 
-.hero h3 {
+.hero h4 {
   font-size: 19px;
   font-weight: 600;
-  margin-bottom: 18px;
+  margin-bottom: 5px;
   color: #111827;
 }
 
@@ -252,50 +212,14 @@ footer {
 
 .description {
   color: #4b5563;
+  padding: 10px 0px;
+
   line-height: 1.75;
   font-size: 15px;
   margin-bottom: 28px;
-  max-width: 500px;
+  max-width: 600px;
 }
 
-.hero-buttons {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-.primary-btn,
-.secondary-btn {
-  padding: 13px 22px;
-  border-radius: 12px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: transform 0.2s;
-}
-
-.primary-btn {
-  background: #3152ff;
-  color: white;
-  border: none;
-}
-
-.primary-btn:hover {
-  background: #2040e0;
-}
-
-.secondary-btn {
-  background: white;
-  border: 2px solid #3152ff;
-  color: #3152ff;
-}
-
-.secondary-btn:hover {
-  background: #f0f4ff;
-}
 
 /* ─── STATS ─── */
 
@@ -312,27 +236,21 @@ footer {
 }
 
 .stat-box {
-  padding: 26px 16px;
+  padding: 16px 16px;
   text-align: center;
   border: 1px solid #f3f4f6;
-}
-
-.stat-box i {
-  font-size: 26px;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.stat-box h4 {
-  font-size: 28px;
-  font-weight: 800;
-  margin-bottom: 6px;
 }
 
 .stat-box p {
   color: #6b7280;
   font-size: 12px;
   line-height: 1.4;
+}
+
+.tool-logo {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
 }
 
 /* ─── SKILLS ─── */
@@ -372,9 +290,9 @@ footer {
 /* ─── INFO CARDS ─── */
 
 .info-grid {
-  margin-top: 44px;
+  margin-top: 22px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 22px;
 }
 
