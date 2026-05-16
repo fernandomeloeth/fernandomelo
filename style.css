@@ -109,31 +109,12 @@ body {
 }
 
 
-.availability i {
-  color: #3152ff;
-  font-size: 18px;
-  margin-top: 2px;
-  flex-shrink: 0;
-}
-
-.availability strong {
-  font-size: 13px;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.availability p {
-  font-size: 12px;
-  color: #6b7280;
-}
-
 footer {
-  margin-top: auto;
-  padding-top: 14px;
+  margin-top: 8px;
+  padding: 8px 0;
   color: #6b7280;
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
-  line-height: 1.6;
 }
 
 .social-buttons {
@@ -142,29 +123,31 @@ footer {
 
 .social-buttons a {
   text-decoration: none;
-  display: block;
-}
-
-.social-buttons button {
-  background: #3152ff;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  font-size: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   width: 100%;
+  background: #3152ff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 13px;
   transition: background 0.2s, transform 0.2s;
 }
 
-.social-buttons button:hover {
+.social-buttons a:hover {
   background: #2340e0;
   transform: translateY(-2px);
+}
+
+.social-buttons a:focus-visible,
+.outline-btn:focus-visible,
+.contact-item a:focus-visible {
+  outline: 2px solid #3152ff;
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 /* ─── MAIN ─── */
@@ -206,17 +189,6 @@ footer {
 
 .hero h2 > span:first-child {
   color: #3152ff;
-}
-
-.cursor {
-  color: #111827;
-  font-weight: 300;
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0; }
 }
 
 .hero h4 {
@@ -354,6 +326,9 @@ footer {
   font-size: 17px;
 }
 
+.icon-blue   { color: #3152ff; }
+.icon-purple { color: #7c3aed; }
+
 .card > p {
   color: #4b5563;
   line-height: 1.7;
@@ -437,32 +412,6 @@ footer {
   transform: translateY(-4px);
 }
 
-/* ─── QUOTE ─── */
-
-.quote-section {
-  margin-top: 44px;
-  background: white;
-  border: 1px solid #e5e7eb;
-  border-radius: 20px;
-  padding: 28px 36px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.quote-section i {
-  font-size: 30px;
-  color: #3152ff;
-  flex-shrink: 0;
-}
-
-.quote-section p {
-  font-size: 15px;
-  color: #374151;
-  font-style: italic;
-  line-height: 1.6;
-}
-
 /* ─── RESPONSIVO ─── */
 
 @media (max-width: 1200px) {
@@ -544,11 +493,6 @@ footer {
     margin-bottom: 0;
   }
 
-  .navbar {
-    flex-direction: column;
-    gap: 20px;
-  }
-
 .hero h2 {
     font-size: 40px;
   }
@@ -561,8 +505,4 @@ footer {
     gap: 10px;
   }
 
-  .quote-section {
-    flex-direction: column;
-    text-align: center;
-  }
 }
